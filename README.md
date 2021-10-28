@@ -1,4 +1,4 @@
-# Synology-Connect
+# Synology DSM Connect
 通过群晖自带的 nginx 反向代理来解决群晖的外部访问问题
 ### 功能说明
 此方法适用于使用 IPv6 地址通过外网访问内网群晖。<br/>
