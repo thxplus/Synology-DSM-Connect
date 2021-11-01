@@ -12,7 +12,15 @@ PPPOE 上网动态 IP 需要依赖 [dnspod-ipv6-ddns](https://github.com/thxplus
 
 ### 安装方法
 
+SSH 登录群晖 切换到 root 权限，具体度娘爬文。
+
 文件拷贝或创建在 /etc/nginx/conf.d 中
+
+代码中 `server_name www.abc.com; ` 是定义到域名 可以是多个 空格隔开
+
+`roxy_pass https://192.168.0.100:5001; `群晖内网https地址 + https端口号 
+
+其他可以自己按心情改着玩。
 
 然后执行 `sudo nginx -s stop` 群晖会自动重启 nginx
 
